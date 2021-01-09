@@ -10,7 +10,6 @@
      v-bind:key="list.id"
      v-bind:list="list"
      v-on:list-like="listLike"
-     v-on:unread-on="unreadOn"
     />
   
     </div>
@@ -28,9 +27,6 @@ export default {
   methods: {
 listLike(id) {
 this.$emit('like-list', id)
-  },
-  unreadOn() {
-this.$emit('unread-on')
   },
   onUpdate(){
     this.$emit('on-update')

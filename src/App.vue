@@ -3,7 +3,6 @@
     <Item
      v-bind:lists="lists"
     @like-list="likeList"
-    @unread-on="unreadOn"
     @on-update="onUpdate"
     />
   </div>
